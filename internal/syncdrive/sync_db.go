@@ -2,12 +2,13 @@ package syncdrive
 
 import (
 	"fmt"
-	"github.com/tickstep/aliyunpan-api/aliyunpan"
-	"github.com/tickstep/aliyunpan/internal/utils"
-	"github.com/tickstep/aliyunpan/library/requester/transfer"
 	"path"
 	"strings"
 	"time"
+
+	"github.com/tickstep/aliyunpan-api/aliyunpan"
+	"github.com/tickstep/aliyunpan/internal/utils"
+	"github.com/tickstep/aliyunpan/library/requester/transfer"
 )
 
 type (
@@ -118,7 +119,8 @@ type (
 
 	SyncFileAction string
 	SyncFileStatus string
-	SyncFileItem   struct {
+	//easyjson:json
+	SyncFileItem struct {
 		Action    SyncFileAction `json:"action"`
 		Status    SyncFileStatus `json:"status"`
 		LocalFile *LocalFileItem `json:"localFile"`

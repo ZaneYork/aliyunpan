@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"sync"
+
+	easyjson "github.com/mailru/easyjson"
 )
 
 type (
@@ -418,7 +420,7 @@ func (s *SyncFileDbBolt) GetFileList(Status SyncFileStatus) (SyncFileList, error
 				continue
 			}
 			item := &SyncFileItem{}
-			if err := json.Unmarshal([]byte(data), item); err != nil {
+			if err := easyjson.Unmarshal([]byte(data), item); err != nil {
 				return nil, err
 			}
 			if item.Status == Status {

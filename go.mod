@@ -9,6 +9,7 @@ require (
 	github.com/dop251/goja v0.0.0-20220408131256-ffe77e20c6f1
 	github.com/json-iterator/go v1.1.12
 	github.com/kardianos/osext v0.0.0-20170510131534-ae77be60afb1
+	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/oleiade/lane v0.0.0-20160817071224-3053869314bb
 	github.com/olekukonko/tablewriter v0.0.2-0.20190618033246-cc27d85e17ce

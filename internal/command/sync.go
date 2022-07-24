@@ -15,6 +15,11 @@ package command
 
 import (
 	"fmt"
+	"os"
+	"path"
+	"strings"
+	"time"
+
 	"github.com/tickstep/aliyunpan-api/aliyunpan"
 	"github.com/tickstep/aliyunpan/cmder"
 	"github.com/tickstep/aliyunpan/internal/config"
@@ -23,10 +28,6 @@ import (
 	"github.com/tickstep/library-go/converter"
 	"github.com/tickstep/library-go/logger"
 	"github.com/urfave/cli"
-	"os"
-	"path"
-	"strings"
-	"time"
 )
 
 func CmdSync() cli.Command {
